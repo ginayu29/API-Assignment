@@ -1,3 +1,5 @@
+/* Style the three main sections of the site */
+
 header {
     height: 100px;
     background-color: brown;
@@ -26,21 +28,23 @@ footer {
     width: 100%;
 }
 
+/* Style the box that holds the content */
+
 .content {
     margin-top: 100px;
     background-color: #f1f1f1;
-    padding: 20px;
+    padding: 200px 100px;
     font-size: 30px;
     width: 70vw;
 }
-
+/* Make the search box look nicer */
 input[type=text] {
     width: 50vw;
     padding: 5px;
     border-radius: 5px;
     margin: 5px;
 }
-
+/* Make the button for the search function match the site */
 button {
     padding: 5px;
     width: 70px;
@@ -50,7 +54,7 @@ button {
     border: none;
     background-color: brown;
 }
-
+/* Text styling */
 h1 {
     color: white;
     text-align: center;

@@ -37,7 +37,7 @@ async function getData() {
         // Display the definition of the entered word
         const definition = data[0].shortdef[0];
         document.getElementById('info').innerHTML = `
-            <p>Definition of <strong>${searchTerm}</strong>:</p>
+            <p>Definition of <strong><span style="color: brown;">${searchTerm}</span></strong>:</p>
             <p>${definition}</p>
         `;
     } catch (error) {
@@ -46,6 +46,14 @@ async function getData() {
         document.getElementById('info').innerHTML = '<p>Failed to fetch definition. The word may not exist or could not be found.</p>';
     }
 }
+// Add event listener to the search input field to trigger search on Enter key press
+const searchInput = document.getElementById('searchInput');
+searchInput.addEventListener('keydown', function(event) {
+    if (event.keyCode === 13) {
+        event.preventDefault();
+        document.getElementById('searchButton').click();
+    }
+});
 
 // Add an event listener to the search button
 // When the button is clicked, call the getData() function to fetch and display the definition
