@@ -4,15 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>INM420 Dictionary API</title>
+    <!-- css reset -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css">
     <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-    <h1>Dictionary App</h1>
 
-    <input type="text" id="searchInput" placeholder="Enter a word">
-    <button id="searchButton">Search</button>
-    <div id="info">Loading...</div>
+    <!-- header bar -->
+    <header>
+        <h1> Welcome to the Dictionary Mini App</h1>
+    </header>
 
+    <!-- Section with the dictionary definition -->
+    <section id="mainsection">
+        <div class="content">
+            <h2>Dictionary App</h2>
+            <!-- Search box for word to be typed in -->
+            <input type="text" id="searchInput" placeholder="Enter a word">
+            <!-- search button -->
+            <button id="searchButton">Search</button>
+            <!-- Definition will go here for the info ID but this is a placeholder until the user types something -->
+            <div id="info">Search for a word to display its definition here.</div>
+        </div>
+    </section>
+    <footer>
+        <h3>Footer</h3>
+    </footer>
     <script src="main.js"></script>
 </body>
 </html>
